@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Function Test Suite">
+  <test name="Default test" verbose="4">
+    <classes>
+      <class name="com.qa.PHPTravels.TestLayer.HomePageTest"/>
+      <class name="com.qa.PHPTravels.TestLayer.LoginPageTest"/>
+      
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

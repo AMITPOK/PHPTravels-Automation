@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Function Test Suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.PHPTravels.TestLayer.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="doLoginTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.qa.PHPTravels.TestLayer.LoginPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Function Test Suite] -->
