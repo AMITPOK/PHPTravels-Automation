@@ -23,11 +23,11 @@ public class HomePage extends BasePage {
 		return driver.getTitle();
 	}
 
-	public Boolean isLoginButtonPresent() {
+	public boolean isLoginButtonPresent() {
 		return driver.findElement(loginButton).isDisplayed();
 	}
 
-	public Boolean isSignUpButtonPresent() {
+	public boolean isSignUpButtonPresent() {
 		return driver.findElement(signUpButton).isDisplayed();
 	}
 

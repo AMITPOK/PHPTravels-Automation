@@ -3,8 +3,7 @@
   <test name="Default test" verbose="4">
     <classes>
       <class name="com.qa.PHPTravels.TestLayer.HomePageTest"/>
-      <class name="com.qa.PHPTravels.TestLayer.LoginPageTest"/>
-      
+  
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->

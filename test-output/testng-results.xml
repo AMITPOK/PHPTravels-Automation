@@ -1,113 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-10T14:05:24 CST" name="Default suite" finished-at="2023-02-10T14:05:29 CST" duration-ms="5472">
+  <suite started-at="2023-02-15T19:39:26 CST" name="Default suite" finished-at="2023-02-15T19:39:32 CST" duration-ms="5819">
     <groups>
     </groups>
-    <test started-at="2023-02-10T14:05:24 CST" name="Default test" finished-at="2023-02-10T14:05:29 CST" duration-ms="5472">
-      <class name="com.qa.PHPTravels.TestLayer.LoginPageTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.qa.PHPTravels.TestLayer.LoginPageTest@1ffaf86]" started-at="2023-02-10T14:05:24 CST" name="init" finished-at="2023-02-10T14:05:28 CST" duration-ms="4258" status="PASS">
+    <test started-at="2023-02-15T19:39:26 CST" name="Default test" finished-at="2023-02-15T19:39:32 CST" duration-ms="5819">
+      <class name="com.qa.PHPTravels.TestLayer.HomePageTest">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:26 CST" name="init" finished-at="2023-02-15T19:39:32 CST" duration-ms="5586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.PHPTravels.TestLayer.LoginPageTest@1ffaf86]" started-at="2023-02-10T14:05:28 CST" name="loginPageTitleTest" finished-at="2023-02-10T14:05:29 CST" duration-ms="1054" status="PASS">
+        <test-method signature="homePageHeaderTest()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:32 CST" name="homePageHeaderTest" finished-at="2023-02-15T19:39:32 CST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageHeaderTest()[pri:2, instance:com.qa.PHPTravels.TestLayer.LoginPageTest@1ffaf86]" started-at="2023-02-10T14:05:29 CST" name="loginPageHeaderTest" finished-at="2023-02-10T14:05:29 CST" duration-ms="8" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.getText()" because the return value of "com.qa.PHPTravels.util.ElementUtil.getWebElement(org.openqa.selenium.By)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.getText()" because the return value of "com.qa.PHPTravels.util.ElementUtil.getWebElement(org.openqa.selenium.By)" is null
-at com.qa.PHPTravels.util.ElementUtil.doGetText(ElementUtil.java:35)
-at com.qa.PHPTravels.PageLayer.LoginPage.getLoginPageHeader(LoginPage.java:29)
-at com.qa.PHPTravels.TestLayer.LoginPageTest.loginPageHeaderTest(LoginPageTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- homePageHeaderTest -->
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:32 CST" name="homePageTitleTest" finished-at="2023-02-15T19:39:32 CST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPageHeaderTest -->
-        <test-method signature="doLoginTest()[pri:3, instance:com.qa.PHPTravels.TestLayer.LoginPageTest@1ffaf86]" started-at="2023-02-10T14:05:29 CST" name="doLoginTest" finished-at="2023-02-10T14:05:29 CST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "com.qa.PHPTravels.util.ElementUtil.getWebElement(org.openqa.selenium.By)" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.sendKeys(java.lang.CharSequence[])" because the return value of "com.qa.PHPTravels.util.ElementUtil.getWebElement(org.openqa.selenium.By)" is null
-at com.qa.PHPTravels.util.ElementUtil.doSendKeys(ElementUtil.java:39)
-at com.qa.PHPTravels.PageLayer.LoginPage.doLogin(LoginPage.java:33)
-at com.qa.PHPTravels.TestLayer.LoginPageTest.doLoginTest(LoginPageTest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="isLoginButtonDisplayedTest()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:32 CST" name="isLoginButtonDisplayedTest" finished-at="2023-02-15T19:39:32 CST" duration-ms="31" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.PHPTravels.TestLayer.LoginPageTest@1ffaf86]" started-at="2023-02-10T14:05:29 CST" name="tearDown" finished-at="2023-02-10T14:05:29 CST" duration-ms="112" status="PASS">
+        </test-method> <!-- isLoginButtonDisplayedTest -->
+        <test-method signature="isSignUpButtonDisplayedTest()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:32 CST" name="isSignUpButtonDisplayedTest" finished-at="2023-02-15T19:39:32 CST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isSignUpButtonDisplayedTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.PHPTravels.TestLayer.HomePageTest@1ffaf86]" started-at="2023-02-15T19:39:32 CST" name="tearDown" finished-at="2023-02-15T19:39:32 CST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.PHPTravels.TestLayer.LoginPageTest -->
+      </class> <!-- com.qa.PHPTravels.TestLayer.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

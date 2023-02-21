@@ -1,0 +1,5 @@
+com\qa\PHPTravels\PageLayer\HomePage.class
+com\qa\PHPTravels\util\AppConstants.class
+com\qa\PHPTravels\util\ElementUtil.class
+com\qa\PHPTravels\PageLayer\LoginPage.class
+com\qa\PHPTravels\BaseLayer\BasePage.class

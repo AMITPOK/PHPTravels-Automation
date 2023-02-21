@@ -6,12 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.qa.PHPTravels.BaseLayer.BasePage;
 import com.qa.PHPTravels.PageLayer.HomePage;
 import com.qa.PHPTravels.PageLayer.LoginPage;
 import com.qa.PHPTravels.util.AppConstants;
+import com.qa.PHPTravels.util.ExcelUtil;
 
 public class LoginPageTest {
 	BasePage basePage;
@@ -33,9 +35,15 @@ public class LoginPageTest {
 	public void loginPageTitleTest() {
 		Assert.assertEquals(AppConstants.LOGIN_PAGE_TITLE, loginPage.getLoginPageTitle());
 	}
+	@DataProvider
+	public Object[][] getData() {
+		Object data[][] = ExcelUtil.getdata(AppConstants.LOGIN_PAGE_SEETNAME);
+		return data;
+	}
+	
 
-	@Test(priority=2)
-	public void loginPageHeaderTest() {
+	@Test(priority=2,dataProvider = "getData")
+	public void loginPageHeaderTest(String firstName,String lastName,String dob,String email) {
 		Assert.assertEquals(AppConstants.LOGIN_PAGE_HEAEDR, loginPage.getLoginPageHeader());
 	}
 
