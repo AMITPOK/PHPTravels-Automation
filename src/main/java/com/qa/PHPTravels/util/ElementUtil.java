@@ -20,7 +20,7 @@ public class ElementUtil {
 		try {
 			driver.findElement(locator);
 		} catch (Exception e) {
-			System.out.println("WebElementcouldnot be created for locator " + locator);
+			System.out.println("WebEslementcouldnot be created for locator " + locator);
 		}
 
 		return element;
